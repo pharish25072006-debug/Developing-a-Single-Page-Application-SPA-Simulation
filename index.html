@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Modern Single Page Application built using HTML, CSS and JavaScript"
+    >
+
+    <title>My SPA | Week 5 Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="/" class="logo" data-link>
+                <span class="logo-icon">⚡</span>
+                My<span>SPA</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
+
+                <a href="/" data-link class="nav-link">
+                    Home
+                </a>
+
+                <a href="/about" data-link class="nav-link">
+                    About
+                </a>
+
+                <a href="/services" data-link class="nav-link">
+                    Services
+                </a>
+
+                <a href="/projects" data-link class="nav-link">
+                    Projects
+                </a>
+
+                <a href="/contact" data-link class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main id="app" class="main-content">
+
+        <!-- JavaScript dynamically loads content here -->
+
+        <div class="loader-container">
+            <div class="loader"></div>
+            <p>Loading application...</p>
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>MySPA</h3>
+                <p>
+                    A modern Single Page Application built with
+                    HTML, CSS and JavaScript.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <div class="footer-links">
+                    <a href="/" data-link>Home</a>
+                    <a href="/about" data-link>About</a>
+                    <a href="/services" data-link>Services</a>
+                    <a href="/contact" data-link>Contact</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>
+                © <span id="year"></span> MySPA. Week 5 Internship Project.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
